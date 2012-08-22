@@ -7,4 +7,4 @@ This anomaly would result into SPAM. SPAM, which is used to describe unsolicited
 
 To alleviate the problem in our work, a user should be able to manage requests; for example, a user should be able to set policies to block unwanted requests or redirect a request to another PC. Aside addressing SPAM in our work, a user could have more than one request at a time and would want to choose what request should be first fulfilled.
 
-This project is available at http://transferhttp.berlios.de, and its demo is available at http://www.ngportal.com/micadeyeye/index.php/2009/09/13/projects-videos/
+This project is also available at http://transferhttp.berlios.de, and its demo is available at http://www.ngportal.com/micadeyeye/index.php/2009/09/13/projects-videos/
