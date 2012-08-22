@@ -1,0 +1,50 @@
+/* CSS Document */
+.navigator{
+border: Opx;
+text-align: center;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: .9em;
+}
+a {
+text-decoration: none;
+}
+body {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: .8em;
+}
+.maintable {
+border: 1px;
+border-color: #0033FF;
+border-style: dashed;
+}
+.trline {
+border-bottom-width: 1px;
+border-bottom-style: dashed;
+border-top-width: 1px;
+border-top-style: dashed;
+border-top-color: #0033FF;
+border-bottom-color: #0033FF;
+}
+.trlinebase {
+border-bottom-width: 1px;
+border-bottom-style: dashed;
+border-bottom-color: #0033FF;
+}
+.bodyborder {
+border: 1px;
+border-color: #B2C1FF;
+border-style: solid;
+}
+.userdetails {
+font-size: 1em;
+color: #000000;
+border-color: #999999;
+}
+.footer {
+font-size: .78em;
+}
+.navlinks {
+font-size: .8em;
+font-weight: bold;
+}
+

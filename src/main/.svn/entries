@@ -1,0 +1,34 @@
+8
+
+dir
+5952
+http://mobicents.googlecode.com/svn/trunk/servers/sip-servlets/sip-servlets-examples/call-blocking/src/main
+http://mobicents.googlecode.com/svn
+
+
+
+2009-03-31T16:29:42.106618Z
+5251
+jean.deruelle
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bf0df8d0-2c1f-0410-b170-bd30377b63dc
+
+java
+dir
+
+sipapp
+dir
+

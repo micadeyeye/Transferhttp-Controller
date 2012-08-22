@@ -1,0 +1,16 @@
+<sip-app xmlns="http://www.jcp.org/xml/ns/sipservlet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.jcp.org/xml/ns/sipservlet http://www.jcp.org/xml/ns/sipservlet/sip-app_1_1.xsd"
+        xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        version="1.1">
+        <app-name>org.mobicents.servlet.sip.example.SessionBlockingApplication</app-name>
+       
+        <servlet>
+                <javaee:servlet-name>SessionBlockingSipServlet</javaee:servlet-name>
+                <javaee:servlet-class>org.mobicents.servlet.sip.example.SessionBlockingSipServlet</javaee:servlet-class>
+                <javaee:load-on-startup>1</javaee:load-on-startup>
+        </servlet>
+        
+        <listener>
+        	<javaee:listener-class>org.mobicents.servlet.sip.example.SessionBlockingSipServlet</javaee:listener-class>
+        </listener>
+</sip-app>	

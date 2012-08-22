@@ -1,0 +1,56 @@
+package org.mobicents.servlet.sip.example;
+
+/**
+ * This is a utility file that keeps record of all session transfer request.
+ *  
+ * @co-author Michael Adeyeye
+ */
+
+import java.sql.*;
+public class sessiontracking {
+  public static void storesessioninfo(String from, String to){
+
+    try {
+	Statement stmt;
+	ResultSet rs;
+
+      //Register the JDBC driver for MySQL.
+      Class.forName("com.mysql.jdbc.Driver");
+
+      //Define URL of database server for
+      // database named test on the localhost
+      // with the default port number 3306.
+      String url =
+            "jdbc:mysql://localhost:3306/messageblocking";
+
+      //Get a connection to the database for a
+      // user named root with a blank password.
+      // This user is the default administrator
+      // having full privileges to do anything.
+      Connection con =
+                     DriverManager.getConnection(
+                                 url,"mike", "mk4nd");
+
+      //Display URL and connection information
+      System.out.println("URL: " + url);
+      System.out.println("Connection: " + con);
+
+      //Get a Statement object
+      stmt = con.createStatement();
+	stmt.executeUpdate("insert into sessiontracking(str_from, str_to) values(from, to)");
+	rs = stmt.executeQuery("select * from sessiontracking");
+	 System.out.println("Display all results:");
+	      while(rs.next()){
+	        String theStr= rs.getString("str_from");
+	        String str = rs.getString("str_URL");
+	        System.out.println("\tId= " + theStr
+                             + "\tURL = " + str);
+    				}//end while loop
+
+
+      con.close();
+    }catch( Exception e ) {
+      e.printStackTrace();
+    }//end catch
+  }//end main
+}//end sessiontracking
